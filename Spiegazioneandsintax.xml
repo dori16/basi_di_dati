@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- La prima riga indica la versione di XML in uso e specifica la codifica UTF-8 per la corretta interpretazione dei dati-->
+<utenti>
+    <utente anni="20"> <!-- utente è figlio di utenti e fratello di utente successivo-->
+        <nome>Ema</nome>
+        <cognome>Princi</cognome>
+        <indirizzo>Torino</indirizzo>
+    </utente>
+    <utente anni="54">
+        <nome>Max</nome>
+        <cognome>Rossi</cognome>
+        <indirizzo>Roma</indirizzo>
+    </utente>
+</utenti>
+
+<!-- il tag utenti sopra è il root del file. la struttura dell'albero è la seguente:
+
+<root>
+  <child>
+    <subchild>.....</subchild>
+  </child>
+</root>
+
+è importante che in ogni file xml ci sia l'elemento root
+
+
+<note date="12/11/2007"> la data in questo caso è un attributo
+  <to>Tove</to>
+  <from>Jani</from>
+</note>
+
+-->
+
+
+
+
+
+
+
+<!-- affinchè un file xml sia ben formato è necessario che:
+    - i tag non possono iniziare con numeri, caratteri speciali o spazi
+    - inoltre è necessario che l'annidamento sia corretto
+    - se un tag non riceve il corrispettivo tag di chiusure renderà il file malformato
+    - XML è case sensitive
+    - è necessario anche rispettare l'ordine di apertura e chiusura dei tag
+    - i valori degli attributi devono sempre essere messi tra virgolette
+
+Una sezione CDATA (Character DATA) è un blocco di testo che viene considerato sempre come testo,
+anche se contiene codice XML o altri caratteri speciali. Per indicare una sezione CDATA è sufficiente
+racchiuderla tra le sequenze di caratteri <![CDATA[ e ]]>. Il nostro esempio diventerà come segue:
+
+-->
